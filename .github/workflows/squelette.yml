@@ -3,7 +3,7 @@ name: Build, Push and Deploy DS to DockerHub
 on:
   workflow_dispatch:
   pull_request:
-    branches: [ main ] 
+    branches: [ main ] #zeyid ta3mil types: [opened, synchronize, reopened] 
 
 env:
  DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
